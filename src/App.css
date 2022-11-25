@@ -1,41 +1,37 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+    font-size: 62.5%;
+    font-family: sans-serif;
+    background-color: #F36F20;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.title {
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    margin: 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.animeSelect {
+    display: grid;
+    grid-template: repeat(3, 6rem) / repeat(3, 12rem);
+    justify-content: center;
+    grid-gap: 2rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.animeSelect button {
+    border-radius: 1rem;
+    background-size: cover;
+    filter: grayscale(50%);
+    color: white;
+    font-size: 1.6rem;
+    font-weight:600;
+    -webkit-text-stroke: .1rem black;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
 }
-
-.card {
-  padding: 2em;
+.animeSelect button:hover {
+    transform: scale(1.1);
 }
-
-.read-the-docs {
-  color: #888;
+.subT {
+    font-size: 1.75rem;
+    color: white;
 }
